@@ -36,7 +36,7 @@ const dbInstance = new aws.rds.Instance("invoicerdb", {
   publiclyAccessible: true,
   multiAz: false,
   skipFinalSnapshot: true,
-  identifier: "invoicerdb",
+  identifier: config.dbName,
 });
 
 // export the Security Group ID

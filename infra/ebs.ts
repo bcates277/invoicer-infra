@@ -83,11 +83,11 @@ const invoicerEnv = new aws.elasticbeanstalk.Environment(
         name: "ServiceRole",
         value: serviceRole.name,
       },
-      //   {
-      //     namespace: "aws:elasticbeanstalk:application:environment",
-      //     name: "MY_ENV_VAR",
-      //     value: "new-value",
-      //   },
+        {
+          namespace: "aws:elasticbeanstalk:application:environment",
+          name: "MY_ENV_VAR",
+          value: "new-value",
+        },
       {
         namespace: "aws:elasticbeanstalk:application:environment",
         name: "INVOICER_POSTGRES_USER",
