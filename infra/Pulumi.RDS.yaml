@@ -1,0 +1,10 @@
+config:
+  aws:region: us-east-1
+  invoicer-pulumi-infra:dbPassword:
+    secure: AAABAD1VV99z0XK5nQW+CmpSq462VBvuS6mqmElY9fUzLCJl7QZuBCWmnQFqU8l63eWumwpvDmv9vbQzcl2mrwqSn0nTEQ==
+  invoicer-pulumi-infra:dbUser:
+    secure: AAABAJ0cSMhpHlg+vzuQcZ/7pyJE3vSZjXtN/OyRN053fOPLdGwWxw==
+  invoicer-pulumi-infra:dbName:
+    secure: AAABAMv5jI9VxO41CKvioVucX9Cd+7iBcgtLc9eUI4n9Hxc3RFaB/fDv
+  invoicer-pulumi-infra:dbHost:
+    secure: AAABAOTyPojVce9B56fBaMBeI98LYthi7eCwxMmgIoM/K9SEcTXVpAhlHZaMKhr6mhwW+XMulw2cY/IDaVxL3Nm3KgMkE/f+RU8/22mX2NwByDQNF5QHIQ==

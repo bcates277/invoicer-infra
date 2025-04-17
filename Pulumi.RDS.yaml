@@ -1,0 +1,13 @@
+config:
+  aws:region: us-east-1
+  invoicer-pulumi-infra:dbPassword:
+    secure:
+      - type: randomPassword
+        length: 25
+        special: true 
+  invoicer-pulumi-infra:dbHost:
+    secure:
+  invoicer-pulumi-infra:dbUser:
+    secure:
+  invoicer-pulumi-infra:dbName:
+    secure:
