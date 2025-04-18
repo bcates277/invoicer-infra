@@ -2,7 +2,7 @@ import * as aws from "@pulumi/aws";
 import * as pulumi from "@pulumi/pulumi";
 import * as config from "./config";
 
-import "./s3";
+import "./s3/s3";
 
 // Create an IAM Role for the instance profile
 const instanceRole = new aws.iam.Role("ebs-instance-role", {
@@ -83,11 +83,6 @@ const invoicerEnv = new aws.elasticbeanstalk.Environment(
         name: "ServiceRole",
         value: serviceRole.name,
       },
-        {
-          namespace: "aws:elasticbeanstalk:application:environment",
-          name: "MY_ENV_VAR",
-          value: "new-value",
-        },
       {
         namespace: "aws:elasticbeanstalk:application:environment",
         name: "INVOICER_POSTGRES_USER",

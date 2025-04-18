@@ -32,7 +32,7 @@ const dbInstance = new aws.rds.Instance("invoicerdb", {
   dbName: "invoicer",
   username: config.dbUser,
   password: config.dbPassword,
-  vpcSecurityGroupIds: ["sg-0459447d78512eb82"],
+  vpcSecurityGroupIds: ["sg-0cbb08e20ce69e33c"],
   publiclyAccessible: true,
   multiAz: false,
   skipFinalSnapshot: true,
