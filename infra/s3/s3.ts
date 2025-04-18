@@ -19,4 +19,4 @@ const dockerFile = new aws.s3.BucketObject("dockerrun", {
 });
 
 // Export the bucket name
-export const bucketName = bucket.id;
+export const bucketName = bucket.bucket;
